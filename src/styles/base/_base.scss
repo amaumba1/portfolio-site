@@ -1,11 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 html {
-    font-size: 62.5%;   // 16 * 0.625 = 10
+    box-sizing: border-box;
+    font-size: 62.5%;   // 16 * 0.625 = 10 // 10px/16px = 62.5% -> 1rem = 10px 
 }
 
 
 body {
-    font-family: helvetica, Arial, sans-serif;
-    font-size: $medium-size;  
+    //font-family: helvetica, Arial, sans-serif;
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+    //font-size: $medium-size;  
 }
 
 button {
