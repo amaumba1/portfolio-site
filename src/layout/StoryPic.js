@@ -3,7 +3,7 @@ import React from 'react';
 
 const StoryPic = () => {
     return (
-        <div>
+        <div className="story__pictures">
             Story pictures
         </div>
     );

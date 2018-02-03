@@ -1,9 +1,10 @@
+
 import React from 'react';
 
 
 const Realtors = () => {
     return (
-        <div>
+        <div className="realtors">
             Top 3 realtors 
         </div>
     );

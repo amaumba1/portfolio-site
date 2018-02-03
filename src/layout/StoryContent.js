@@ -4,9 +4,10 @@ import React from 'react';
 
 const StoryContent = () => {
     return (
-        <div>
-            Story Content
-        </div>
+        
+            <div className="story__content">
+                Story Content
+            </div>
     );
 }
 

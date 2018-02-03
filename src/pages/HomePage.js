@@ -1,27 +1,30 @@
+
 import React from 'react';
-import Sidebar from '../components/Sidebar';
-import Features from '../components/Features';
-import Gallery from '../components/Gallery';
-import Footer from '../components/Footer';
-import StoryContent from '../components/StoryContent';
-import StoryPic from '../components/StoryPic';
-import Homes from '../components/Homes';
-import Realtors from '../components/Realtors';
+import Sidebar from '../layout/Sidebar';
+import Features from '../layout/Features';
+import Gallery from '../layout/Gallery';
+import Footer from '../layout/Footer';
+import StoryContent from '../layout/StoryContent';
+import StoryPic from '../layout/StoryPic';
+import Homes from '../layout/Homes';
+import Realtors from '../layout/Realtors';
+import MainHeader from '../layout/MainHeader';
 
 const HomePage = () => (
-    <div>
-        <h1>Welcome</h1>
+    <div className="container">
             <Sidebar />
-            <Features />
-            <Gallery />
-            <Footer />
-            <Homes /> 
+            <MainHeader/>
             <Realtors /> 
-            <Sidebar /> 
+            <Features />
+            <StoryPic/>
             <StoryContent />
-            <StoryPic /> 
-        <p>This is my  site. Take a look around</p>
+            <Homes /> 
+            <Gallery />
+            <Footer /> 
     </div>
 )
 
 export default HomePage; 
+
+
+

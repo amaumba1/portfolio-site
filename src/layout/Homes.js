@@ -1,9 +1,10 @@
+
 import React from 'react';
 
 
 const Homes = () => {
     return (
-        <section>
+        <section className="homes">
             Homes
         </section>
     );

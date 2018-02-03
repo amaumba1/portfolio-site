@@ -3,7 +3,7 @@ import React from 'react';
 
 const Gallery = () => {
     return (
-        <section>
+        <section className="gallery">
             Gallery 
         </section>
     );
