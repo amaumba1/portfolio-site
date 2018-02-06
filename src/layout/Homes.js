@@ -219,4 +219,3 @@ const Homes = () => {
 
 export default Homes; 
 
-// <button className="cta">Contant Realtor</button>
