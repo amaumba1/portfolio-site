@@ -9,6 +9,15 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;   // 16 * 0.625 = 10 // 10px/16px = 62.5% -> 1rem = 10px 
+    
+    // this is for the desktop approach
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+
+    //this is for the mobile approach
+    //@media only screen and (min-width: $bp-largest)      
+
+    }
 }
 
 
@@ -33,6 +42,20 @@ body {
     //     padding: 40px;
     //     font-size: 3rem;
     // }
+    
+    //Putting the nav horizontal
+    @media only screen and (max-width: $bp-large) {
+        display: grid;
+        grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start]
+        repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)[full-end]; 
+    }
+
+    // putting the realtor down to header 
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 6rem calc(100vh - 6rem); //min-content min-content min-content repeat(3, min-content);
+        
+    }
 }
 
 button {

@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
-    align-items: center;
+    align-items: center; // default is stretch but can be center / end / start. this mean we align item vertically
 
     &__link:link,
     &__link:visited {

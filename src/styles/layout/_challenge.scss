@@ -1,0 +1,180 @@
+// METHOD 3: NAME GRID AREAS  with twick of empty grid
+
+.challenge {
+    width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-rows: 100px 200px 400px 100px;
+    grid-template-columns: repeat(3, 1fr) 200px;
+    grid-gap: 30px;
+
+    grid-template-areas: ". head head ."
+                         "box-1 box-2 box-3 side"
+                         "main main main side"
+                         "foot foot foot foot";
+    & > * {
+        background-color: orangered;
+        padding: 20px;
+        color: white;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .header1 {
+        grid-area: head;
+    }
+
+    .small-box-1 { grid-area: box-1; }
+    .small-box-2 { grid-area: box-2; }
+    .small-box-3 { grid-area: box-3; }
+
+
+    .sidebar1 { 
+        grid-area: side;
+
+    }
+
+    .main-content {
+        grid-area: main;
+        
+    }
+
+    .footer1 {
+        grid-area: foot;
+        
+    }
+}
+
+
+
+
+
+
+// // METHOD 3: NAME GRID AREAS 
+
+// .challenge {
+//     width: 1000px;
+//     margin: 30px auto;
+
+//     display: grid;
+//     grid-template-rows: 100px 200px 400px 100px;
+//     grid-template-columns: repeat(3, 1fr) 200px;
+//     grid-gap: 30px;
+
+//     grid-template-areas: "head head head head"
+//                          "box box box side"
+//                          "main main main side"
+//                          "foot foot foot foot";
+//     & > * {
+//         background-color: orangered;
+//         padding: 20px;
+//         color: white;
+//         font-size: 30px;
+//         font-family: sans-serif;
+//     }
+
+//     .header1 {
+//         grid-area: head;
+//     }
+
+
+//     .sidebar1 { 
+//         grid-area: side;
+
+//     }
+
+//     .main-content {
+//         grid-area: main;
+        
+//     }
+
+//     .footer1 {
+//         grid-area: foot;
+        
+//     }
+// }
+
+
+// // METHOD 2: LINE NAMES
+
+// // for rows they act as column and colums act as rows 
+
+// .challenge {
+//     width: 1000px;
+//     margin: 30px auto;
+
+//     display: grid;
+//     grid-template-rows: [header-start-onOne] 100px [header-end-onTwo box-start-onTwo]200px 
+//     [box-end-onThree main-start-onThree]400px [main-end-onFour footer-start-onFour]100px [footer-end-onFive];
+//     grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-end];
+//     grid-gap: 30px;
+
+//     & > * {
+//         background-color: orangered;
+//         padding: 20px;
+//         color: white;
+//         font-size: 30px;
+//         font-family: sans-serif;
+//     }
+
+//     .header1 {
+//         grid-column: col-start 1 / grid-end;
+//     }
+
+
+//     .sidebar1 { 
+//         grid-column: col-end 3 / grid-end;
+//         grid-row:  box-start-onTwo / main-end-onFour;
+
+//     }
+
+//     .main-content {
+//         grid-column: col-start 1 / col-end 3;
+//     }
+
+//     .footer1 {
+//         grid-column: col-start 1 / grid-end;
+//     }
+// }
+
+
+
+// METHOD 1: LINE NUMBER
+
+// .challenge {
+//     width: 1000px;
+//     margin: 30px auto;
+
+//     display: grid;
+//     grid-template-rows: 100px 200px 400px 100px;
+//     grid-template-columns: repeat(3, 1fr) 200px;
+//     grid-gap: 30px;
+
+//     & > * {
+//         background-color: orangered;
+//         padding: 20px;
+//         color: white;
+//         font-size: 30px;
+//         font-family: sans-serif;
+//     }
+
+//     .header1 {
+//         grid-column: 1 / -1;
+//     }
+
+
+//     .sidebar1 { 
+//         grid-column: 4 / 5;
+//         grid-row: 2 / span 2;
+
+//     }
+
+//     .main-content {
+//         grid-column: 1 / span 3;
+//     }
+
+//     .footer1 {
+//         grid-column: 1 / -1;
+//     }
+// }

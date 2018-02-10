@@ -114,6 +114,11 @@
 
         &::before { top: -.8rem; }
         &::after { top: .8rem; }
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 0rem;
+            
+        }
     }
 
     &__button:hover &__icon::before {
@@ -137,5 +142,7 @@
         top: 0;
         transform: rotate(-135deg);
     }
+
+   
 
 }

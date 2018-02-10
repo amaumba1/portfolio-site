@@ -11,6 +11,13 @@ $color-grey-light-2: #aaa;
 $color-grey-dark-1: #54483A;
 $color-grey-dark-2: #6D5D4B;
 
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   //1200px divide by 16px
+$bp-large: 62.5em;   //1000px divide by 16px
+$bp-medium: 50em;    // 800px divide by 16px
+$bp-small: 37.5em;   // 600px divide by 16px
+
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
